@@ -7,7 +7,7 @@ function App() {
     <>
     <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">EbookSeller</a>
+    <a style = {{"padding-left": "120px"}} class="navbar-brand" href="#">EbookSeller</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,22 +16,21 @@ function App() {
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>            
+                  
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      
+      <div style = {{"margin-top": "12px", "padding-left": "50px"}} class="input-group mb-3" >
+        <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Choose Genre</label>
+        </div>
+        <select style = {{"width":"500px"}} class="custom-select" id="inputGroupSelect01">
+          <option selected>All Books</option>
+          <option value="1">Sci-fi</option>
+          <option value="2">Self help</option>
+          <option value="3">Horror</option>
+        </select>
+      </div>
+      
     </div>
   </div>
 </nav>
