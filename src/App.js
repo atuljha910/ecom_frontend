@@ -16,7 +16,12 @@ function App() {
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-                  
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Books</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Contact</a>
+        </li>        
       </ul>
       
       <div style = {{"margin-top": "12px", "padding-left": "50px"}} class="input-group mb-3" >
