@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <NavBar title = "eBookSeller"/>
+      <div class = "container my-3">
       <Books/>
+      </div>
+      
     </>
   );
 }

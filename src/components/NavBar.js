@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+
 export default function NavBar(props) {
+    const ChangeContentToHome = ()=> {
+        
+    }
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-light">
@@ -12,7 +17,7 @@ export default function NavBar(props) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#" onClick={ChangeContentToHome}>Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Books</a>
