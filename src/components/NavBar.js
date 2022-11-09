@@ -2,18 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useState } from "react";
 import Books from './Books';
+import Contact from './Contact';
 
 
 
 
 export default function NavBar(props) {
-  const TabBooks = () => {
-    if (toggleState === 2) {
-      return(
-      <Books/>
-      );
-    } 
-  }
+  
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index)=> {
     setToggleState(index);
@@ -41,7 +36,15 @@ export default function NavBar(props) {
             </div>
         </div>
       </nav>
-      <TabBooks/>
+      <div>
+        
+        {toggleState === 2 &&
+          <div class="container"><Books/></div>
+        }
+        {toggleState === 3 &&
+          <div class="container"><Contact/></div>
+        }
+      </div>
     </div>
   )
 }
