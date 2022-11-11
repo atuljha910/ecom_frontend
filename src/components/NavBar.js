@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useState } from "react";
 import Books from './Books';
 import Contact from './Contact';
+import Home from './Home';
 
 
 
@@ -37,7 +38,9 @@ export default function NavBar(props) {
         </div>
       </nav>
       <div>
-        
+        {toggleState === 1 &&
+          <div class="container"><Home/></div>
+        }
         {toggleState === 2 &&
           <div class="container"><Books/></div>
         }
