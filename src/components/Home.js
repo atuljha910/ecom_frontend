@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>
-      <h1>
+    <div style = {{backgroundColor:'#87CEEB', justifyContent: 'center', alignItems: 'center'}}>
+      <h1 >
         Want to read books for free?
       </h1>
         <h2>

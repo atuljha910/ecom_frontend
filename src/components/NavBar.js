@@ -39,7 +39,7 @@ export default function NavBar(props) {
       </nav>
       <div>
         {toggleState === 1 &&
-          <div class="container"><Home/></div>
+          <div ><Home/></div>
         }
         {toggleState === 2 &&
           <div class="container"><Books/></div>
